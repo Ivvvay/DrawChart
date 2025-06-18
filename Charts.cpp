@@ -1,7 +1,6 @@
 #include "Charts.h"
 
 void BarChart::createChart(QList<DataStorage> list, bool isBWEnabled) {
-    DataStorage data;
     QChart* chart = getChart();
     QBarSeries *series = new QBarSeries(chart);
     int length = list.count();
@@ -25,7 +24,6 @@ void BarChart::createChart(QList<DataStorage> list, bool isBWEnabled) {
 }
 
 void PieChart::createChart(QList<DataStorage> list, bool isBWEnabled) {
-    DataStorage data;
     QChart* chart = getChart();
     QPieSeries * series = new QPieSeries(chart);
     int length = list.count();
